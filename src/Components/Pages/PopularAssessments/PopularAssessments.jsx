@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 // import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-import popular from "../../../images/Testimonialimage/popular2.png";
+import popular from "../../../images/Testimonialimage/Popular2.png";
 import Assesmentreuse from "../../Reusablecomponents/Assesmentreuse/Assesmentreuse";
 import Testimonial from "../../Reusablecomponents/Testimonial/Testimonial";
 import Getdemo from "../../Reusablecomponents/Getdemo/Getdemo";
