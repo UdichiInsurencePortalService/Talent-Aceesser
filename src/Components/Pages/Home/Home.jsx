@@ -26,11 +26,11 @@ import sectorskill from "../../../images/Testimonialimage/sectorskill.png";
 import pratichi from "../../../images/Testimonialimage/pratichi.png";
 import asdp from "../../../images/Testimonialimage/asdp.png";
 import amity from "../../../images/Testimonialimage/amity2.png";
-import demo from "../../../images/Testimonialimage/demo.png";
+// import demo from "../../../images/Testimonialimage/demo.png";
 
 // logo talent aceess
-import imgage from "../../../../src/images/logo2.png";
-import Footer from "../../Header/Footer/Footer";
+// import imgage from "../../../../src/images/logo2.png";
+// import Footer from "../../Header/Footer/Footer";
 import Getdemo from "../../Reusablecomponents/Getdemo/Getdemo";
 import Testimonial from "../../Reusablecomponents/Testimonial/Testimonial";
 
