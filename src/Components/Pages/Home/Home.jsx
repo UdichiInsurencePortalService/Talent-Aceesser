@@ -16,6 +16,7 @@ import "swiper/css/pagination";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 import { useEffect } from "react";
 
 import Udichi from "../../../images/Testimonialimage/udichi-logo.png";
