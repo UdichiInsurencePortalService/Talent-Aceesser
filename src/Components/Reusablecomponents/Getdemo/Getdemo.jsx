@@ -1,6 +1,6 @@
 import React from "react";
 import "./Getdemo.css";
-import demo from "../../../../src/images/Testimonialimage/demo.png";
+import demo from "../../../../src/images/Testimonialimage/Demo.png";
 
 const Getdemo = () => {
   return (
