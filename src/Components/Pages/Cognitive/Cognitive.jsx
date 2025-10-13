@@ -13,7 +13,7 @@ const Cognitive = () => {
       icon: "🎯",
       title: "Attention to Detail",
       description:
-        "Candidates who can focus on the finer points to deliver accurate results.",
+        "Canidates who can focus on the finer points to deliver accurate results.",
     },
     {
       icon: "🛠️",

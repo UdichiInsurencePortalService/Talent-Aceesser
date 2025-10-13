@@ -34,7 +34,7 @@ const AssessmentTypes = () => {
         <Assesmentreuse
           tag="📝 Assessment Types"
           title="Get the Full Picture of Your Candidates"
-          highlight="Full Picture"
+          highlight="Get the Full Picture of Your Candidates"
           description="From hard skills to cognitive ability, Talent Assessment comprehensive talent assessment solutions help you find the perfect candidate for every role."
           buttonText="Get a Demo"
           image={asse}

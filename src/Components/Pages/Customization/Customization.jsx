@@ -2,20 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Assesmentreuse from "../../Reusablecomponents/Assesmentreuse/Assesmentreuse";
-
 import Customizable from "../../../images/Testimonialimage/Customizable.png";
-
 import "./Customization.css";
 import Cardcomponent from "../../Reusablecomponents/Cardcomponent/Cardcomponent";
 import Testimonial from "../../Reusablecomponents/Testimonial/Testimonial";
 import Getdemo from "../../Reusablecomponents/Getdemo/Getdemo";
+
 const Customization = () => {
   const simulationSkillsData = [
     {
       icon: "🖥️",
       title: "Office Suite Simulation",
       description:
-        "Evaluate candidates’ proficiency with Word®, Excel®, Outlook®, and PowerPoint® using real-time browser simulations that mirror workplace tasks.",
+        "Evaluate candidates' proficiency with Word®, Excel®, Outlook®, and PowerPoint® using real-time browser simulations that mirror workplace tasks.",
     },
     {
       icon: "⏱️",
@@ -45,6 +44,7 @@ const Customization = () => {
 
   return (
     <>
+      {/* Hero Section */}
       <div>
         <Assesmentreuse
           tag="🛠️ Customization"
@@ -56,50 +56,38 @@ const Customization = () => {
         />
       </div>
 
-      <div className="customization">
-        <div>
-          <h1>Why Customization?</h1>
+      {/* Why Customization Section */}
+      <section className="customization-intro">
+        <div className="customization">
+          <div>
+            <h1>Why Customization?</h1>
+          </div>
+          <div>
+            <p>
+              Standardized assessments don't fit every role. With TSA, you can
+              design custom pre-employment testing solutions to measure the skills
+              that truly matter for your industry, team, and organizational goals
+              — ensuring every hire is the right fit.
+            </p>
+          </div>
         </div>
-        <div>
-          <p>
-            Standardized assessments don’t fit every role. With TSA, you can
-            design custom pre-employment testing solutions to measure the skills
-            that truly matter for your industry, team, and organizational goals
-            — ensuring every hire is the right fit.
-          </p>
-        </div>
-        {/* <div>
-          <a href="#explore" className="btn">
-            Explore Custom Tests
-          </a>
-        </div> */}
-      </div>
+      </section>
 
-      {/* <div className="bg-decorations">
-        <div className="decoration decoration-1"></div>
-        <div className="decoration decoration-2"></div>
-        <div className="decoration decoration-3"></div>
-      </div> */}
-
+      {/* Custom Tests Section */}
       <section className="custom-tests-section">
         <div className="container-fluid px-4">
           <div className="row align-items-center justify-content-center">
             {/* Left Image Section */}
-            <div className="col-lg-6 col-md-8 col-12 order-2 order-lg-1 text-center mb-4 mb-lg-0">
-              {/* <div className="image-container"> */}
-              {/* <div className="image-glow"></div> */}
-              {/* <div className="image-wrapper"> */}
+            {/* <div className="col-lg-6 col-md-8 col-12 order-2 order-lg-1 text-center mb-4 mb-lg-0">
               <img
                 src={Customizable}
                 alt="Custom Tests"
                 className="custom-image mx-auto d-block"
               />
-              {/* </div> */}
-              {/* </div> */}
-            </div>
+            </div> */}
 
             {/* Right Content Section */}
-            <div className="col-lg-6 col-12 order-1 order-lg-2">
+            <div className="col-lg-6 col-12 order-1 order-lg-2 ps-lg-5">
               {/* Tag */}
               <div className="tag-badge">
                 <span className="tag-text">Custom Tests</span>
@@ -124,7 +112,7 @@ const Customization = () => {
               <div className="features-container">
                 <div className="feature-item">
                   <div className="feature-icon icon-blue">📚</div>
-                  <div className="flex-grow-1">
+                  <div className="feature-content">
                     <h4 className="feature-title">
                       Leverage Ready-Made Libraries
                     </h4>
@@ -137,7 +125,7 @@ const Customization = () => {
 
                 <div className="feature-item">
                   <div className="feature-icon icon-purple">🎯</div>
-                  <div className="flex-grow-1">
+                  <div className="feature-content">
                     <h4 className="feature-title">
                       Target Role-Specific Competencies
                     </h4>
@@ -150,7 +138,7 @@ const Customization = () => {
 
                 <div className="feature-item">
                   <div className="feature-icon icon-green">🛠️</div>
-                  <div className="flex-grow-1">
+                  <div className="feature-content">
                     <h4 className="feature-title">
                       Incorporate Your Own Content
                     </h4>
@@ -163,7 +151,7 @@ const Customization = () => {
 
                 <div className="feature-item">
                   <div className="feature-icon icon-orange">⚖️</div>
-                  <div className="flex-grow-1">
+                  <div className="feature-content">
                     <h4 className="feature-title">
                       Set the Right Challenge Level
                     </h4>
@@ -174,19 +162,13 @@ const Customization = () => {
                   </div>
                 </div>
               </div>
-
-              {/* CTA Button */}
-              {/* <button className="cta-button">
-                <span>Explore Custom Tests</span>
-                <svg className="arrow-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </button> */}
             </div>
           </div>
         </div>
       </section>
-      <div className="2nd">
+
+      {/* Dynamic Question Formats Section */}
+      <section className="dynamic-formats-section">
         <div className="customization">
           <div>
             <h1>Dynamic Question Formats to Test Every Skill</h1>
@@ -200,95 +182,71 @@ const Customization = () => {
               confidence in their ability to succeed.
             </p>
           </div>
-          {/* <div>
-          <a href="#explore" className="btn">
-            Explore Custom Tests
-          </a>
-        </div> */}
         </div>
-      </div>
+      </section>
 
-      <div>
-        <div>
-          <Cardcomponent
-            heading="With TSA Simulations"
-            highlight="you can evaluate candidates on real workplace challenges:"
-            skillsData={simulationSkillsData}
-          />
+      {/* Simulations Section */}
+      <section className="simulations-section">
+        <Cardcomponent
+          heading="With TSA Simulations"
+          highlight="you can evaluate candidates on real workplace challenges:"
+          skillsData={simulationSkillsData}
+        />
 
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "30px",
-            }}
-          >
-            <Link to="/simulation" style={{ textDecoration: "none" }}>
-              <button
-                style={{
-                  padding: "12px 30px",
-                  marginBottom:"50px",
-                  borderRadius: "30px",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  cursor: "pointer",
-                  fontSize: "1rem",
-                  fontWeight: "600",
-                  color: "#fff",
-                  background: "linear-gradient(135deg, #1e40af, #7c3aed)",
-                  border: "none",
-                  boxShadow: "0 8px 20px rgba(124, 58, 237, 0.3)",
-                  transition: "transform 0.2s ease, box-shadow 0.2s ease",
-                }}
-                onMouseEnter={(e) => {
-                  e.target.style.transform = "translateY(-3px)";
-                  e.target.style.boxShadow =
-                    "0 12px 25px rgba(124, 58, 237, 0.4)";
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.transform = "translateY(0)";
-                  e.target.style.boxShadow =
-                    "0 8px 20px rgba(124, 58, 237, 0.3)";
-                }}
+        <div className="cta-container">
+          <Link to="/simulation" style={{ textDecoration: "none" }}>
+            <button className="cta-button">
+              <span>Learn More</span>
+              <svg 
+                className="arrow-icon" 
+                width="20" 
+                height="20" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
               >
-                Learn More
-              </button>
-            </Link>
-          </div>
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M17 8l4 4m0 0l-4 4m4-4H3" 
+                />
+              </svg>
+            </button>
+          </Link>
         </div>
-      </div>
+      </section>
 
-      <div className="2nd">
+      {/* Candidate Experience Section */}
+      <section className="candidate-experience-section">
         <div className="customization">
           <div>
             <h1>Create a Seamless Candidate Experience</h1>
           </div>
           <div>
             <p>
-              Transform pre-employment testing into a branding advantage with TSA’s customized talent assessments. From the look and feel of your assessment pages to candidate communications, you can craft a hiring experience that reflects your brand and stands out.
+              Transform pre-employment testing into a branding advantage with TSA's customized talent assessments. From the look and feel of your assessment pages to candidate communications, you can craft a hiring experience that reflects your brand and stands out.
             </p>
           </div>
           <div>
-          <a href="#explore" className="btn">
-            Get a Demo
-          </a>
+            <a href="#demo" className="btn btn-demo">
+              Get a Demo
+            </a>
+          </div>
         </div>
-        </div>
-      </div>
+      </section>
 
-      <div className="testimonial-section">
+      {/* Testimonial Section */}
+      <section className="testimonial-section">
         <Testimonial />
-      </div>
+      </section>
 
-      <div className="subscription-footer-wrapper">
-        <div>
-          <Getdemo />
-        </div>
-      </div>
+      {/* Get Demo Section */}
+      <section className="subscription-footer-wrappers">
+        <Getdemo />
+      </section>
     </>
   );
 };
 
 export default Customization;
- 

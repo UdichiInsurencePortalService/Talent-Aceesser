@@ -67,7 +67,7 @@ const Skills = () => {
         <Assesmentreuse
           tag="📝 Assessment Types > Skills"
           title="Hire Confidently with Hard Talent Assessments"
-          highlight="Hire Confidently"
+          highlight="Hire Confidently with Hard Talent Assessments"
           description="From technical expertise to leadership potential Talent Assesss comprehensive skills assessment solution helps you identify the right candidates with the skills you need."
           buttonText="Get a Demo"
           image={skillsassessment}

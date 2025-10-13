@@ -42,7 +42,7 @@ const Behavioral = () => {
         <Assesmentreuse
           tag="📝 Assessment > Behavioral"
           title="Better Hires Start with Better Behavioral Assessments"
-          highlight="Behavioral"
+          highlight="Better Hires Start with Better Behavioral Assessments"
           description="Pre-employment behavioral assessments help you determine how candidates will perform in leadership roles, team-based positions, or customer-facing jobs. By evaluating key personality traits, you can ensure new hires are not only skilled but  also aligned with your company’s culture and vision."
           buttonText="Get a Demo"
           image={behavioral}
