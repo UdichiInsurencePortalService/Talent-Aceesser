@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import logo3 from "../../../../src/images/LOGO3.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./navbar.css";
+import "./Navbar.css";
 
 const PhoneIcon = () => <span>📞</span>;
 
@@ -44,7 +44,7 @@ const Topbar = () => {
   );
 };
 
-const ResponsiveNavbar = () => {
+const Navbar = () => {
   const [expanded, setExpanded] = useState(false);
   const handleNavClick = () => setExpanded(false);
 
@@ -586,4 +586,4 @@ const ResponsiveNavbar = () => {
   );
 };
 
-export default ResponsiveNavbar;
+export default Navbar;
