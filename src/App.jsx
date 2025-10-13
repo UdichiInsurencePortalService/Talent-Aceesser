@@ -2,7 +2,7 @@
 
 
 import React from 'react'
-import Navbar from './Components/Header/Navbar/Navbar'
+import Navbar from './Components/Header/Navbar/Navbare.jsx'
 import { Routes, Route } from 'react-router-dom'
 
 import Home from "./Components/Pages/Home/Home"

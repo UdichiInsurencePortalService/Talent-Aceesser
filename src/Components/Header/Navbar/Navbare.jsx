@@ -44,7 +44,11 @@ const Topbar = () => {
   );
 };
 
+<<<<<<< HEAD:src/Components/Header/Navbar/Navbar.jsx
 const Navbar = () => {
+=======
+const Navbare = () => {
+>>>>>>> ee9e2c4 (new changes by govind):src/Components/Header/Navbar/Navbare.jsx
   const [expanded, setExpanded] = useState(false);
   const handleNavClick = () => setExpanded(false);
 
@@ -586,4 +590,8 @@ const Navbar = () => {
   );
 };
 
+<<<<<<< HEAD:src/Components/Header/Navbar/Navbar.jsx
 export default Navbar;
+=======
+export default Navbare;
+>>>>>>> ee9e2c4 (new changes by govind):src/Components/Header/Navbar/Navbare.jsx
