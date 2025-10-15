@@ -2,8 +2,8 @@
 .assessment-section {
   background: linear-gradient(135deg, #0a1f55 0%, #1a3d91 100%);
   color: white;
-  padding: 80px 0;
-  margin-bottom: 40px;
+  padding: 80px;
+  /* margin-bottom: 40px; */
   position: relative;
   overflow: hidden;
 }

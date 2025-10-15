@@ -62,6 +62,7 @@ const QuestionStyles = () => {
         buttonText="Get a Demo"
         image={skill}
       />
+
       {/* hard skills section */}
       <div className="text-center section-header">
         <h1 style={{color: "#0a1f55", fontWeight:"700", fontSize:"2rem"}}>

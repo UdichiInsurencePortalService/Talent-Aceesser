@@ -5,7 +5,10 @@ import React from 'react'
 import Navbar from './Components/Header/Navbar/Navbare.jsx'
 import { Routes, Route } from 'react-router-dom'
 
-import Home from "./Components/Pages/Home/Home"
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+// import Home from "./Components/Pages/Home/Home"
 import AssessmentTypes from './Components/Pages/AssessmentTypes/AssessmentTypes'
 import Footer from './Components/Header/Footer/Footer'
 import QuestionStyles from './Components/Pages/QuestionStyles/QuestionStyles.jsx'
@@ -16,6 +19,10 @@ import PopularAssessments from './Components/Pages/PopularAssessments/PopularAss
 import Simulation from './Components/Pages/Simulation/Simulation.jsx'
 import Video from './Components/Pages/Video/Video.jsx'
 import Customization from './Components/Pages/Customization/Customization.jsx'
+import Dedicatedassessment from './Components/Pages/DedicatedAssessment/DedicatedAssessment.jsx'
+import Home from './Components/Pages/Home/home.jsx'
+import AssessmentLibrary from './Components/Pages/AssessmentLibrary/AssessmentLibrary.jsx'
+// import Dedicatedassessment from './Components/PaDedicatedassessment.jsx
 
 const App = () => {
   return (
@@ -32,6 +39,8 @@ const App = () => {
         <Route path="/Simulation" element={ <Simulation />} />
         <Route path='/Video' element={<Video/>} />
         <Route path='/Customization' element={<Customization />} />
+        <Route path='/Dedicatedassessment' element={<Dedicatedassessment />} />
+        <Route path='/AssessmentLibrary' element={<AssessmentLibrary />} />
       </Routes>
       <Footer />
     </>

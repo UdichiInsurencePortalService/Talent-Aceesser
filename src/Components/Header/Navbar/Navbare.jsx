@@ -81,7 +81,9 @@ const Navbare = () => {
                   <div className="row p-4 mega-dropdown-row">
                     {/* 🧩 Assessment Types column */}
                     <div className="col-lg-3 col-md-6 col-12 mb-4">
-                      <Link to="/AssessmentTypes" onClick={handleNavClick}><h6 className="dropdown-header">Assessment Types</h6></Link>
+                      <Link to="/AssessmentTypes" onClick={handleNavClick}>
+                        <h6 className="dropdown-header">Assessment Types</h6>
+                      </Link>
                       <ul className="dropdown-list">
                         <li>
                           <Link to="/Skills" onClick={handleNavClick}>
@@ -99,7 +101,10 @@ const Navbare = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="/PopularAssessments" onClick={handleNavClick}>
+                          <Link
+                            to="/PopularAssessments"
+                            onClick={handleNavClick}
+                          >
                             Popular Assessments
                           </Link>
                         </li>
@@ -116,7 +121,10 @@ const Navbare = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="/Security" onClick={handleNavClick}>
+                          <Link
+                            to="/Dedicatedassessment"
+                            onClick={handleNavClick}
+                          >
                             Dedicated Assessment Experts
                           </Link>
                         </li>
@@ -145,7 +153,9 @@ const Navbare = () => {
 
                     {/* ❓ Question Styles column */}
                     <div className="col-lg-3 col-md-6 col-12 mb-4">
-                      <Link to="/QuestionStyles" onClick={handleNavClick}><h6 className="dropdown-header">Question Styles</h6></Link>
+                      <Link to="/QuestionStyles" onClick={handleNavClick}>
+                        <h6 className="dropdown-header">Question Styles</h6>
+                      </Link>
                       <ul className="dropdown-list">
                         <li>
                           <Link to="/Simulation" onClick={handleNavClick}>
@@ -153,12 +163,18 @@ const Navbare = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="/QuestionStyles#multiple-choice" onClick={handleNavClick}>
+                          <Link
+                            to="/QuestionStyles#multiple-choice"
+                            onClick={handleNavClick}
+                          >
                             Multiple Choice
                           </Link>
                         </li>
                         <li>
-                          <Link to="/QuestionStyles#Free-Response" onClick={handleNavClick}>
+                          <Link
+                            to="/QuestionStyles#Free-Response"
+                            onClick={handleNavClick}
+                          >
                             Free Response
                           </Link>
                         </li>
@@ -174,16 +190,16 @@ const Navbare = () => {
                     <div className="col-lg-3 col-md-6 col-12">
                       <h6 className="dropdown-header">Platform Overview</h6>
                       <div className="mt-2">
-                        <Link 
-                          to="/LearnMore" 
-                          className="learn-more-link text-decoration-none" 
+                        <Link
+                          to="/LearnMore"
+                          className="learn-more-link text-decoration-none"
                           style={{
-                            fontSize: '20px', 
-                            backgroundColor: 'blue',
-                            color: "white", 
-                            padding: '6px 12px', 
-                            borderRadius: '6px',
-                            display: 'inline-block'
+                            fontSize: "20px",
+                            backgroundColor: "blue",
+                            color: "white",
+                            padding: "6px 12px",
+                            borderRadius: "6px",
+                            display: "inline-block",
                           }}
                           onClick={handleNavClick}
                         >
@@ -288,7 +304,12 @@ const Navbare = () => {
               </NavDropdown>
 
               {/* REGULAR NAV LINKS */}
-              <Nav.Link href="#" onClick={handleNavClick}>
+
+              <Nav.Link
+                as={Link}
+                to="/AssessmentLibrary"
+                style={{ textDecoration: "none" }}
+              >
                 <FaFolder className="d-lg-none me-2" />
                 Assessment Library
               </Nav.Link>
@@ -303,15 +324,15 @@ const Navbare = () => {
 
               {/* BUTTONS */}
               <div className="d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0 ms-lg-3">
-                <Button 
-                  variant="primary" 
+                <Button
+                  variant="primary"
                   className="custom-button"
                   onClick={handleNavClick}
                 >
                   Take Your Test
                 </Button>
-                <Button 
-                  variant="outline-primary" 
+                <Button
+                  variant="outline-primary"
                   className="custom-button-2"
                   onClick={handleNavClick}
                 >
@@ -408,7 +429,7 @@ const Navbare = () => {
           .mega-dropdown .dropdown-menu {
             min-width: 100%;
           }
-          
+
           .logo-img {
             height: 60px;
           }
@@ -419,168 +440,168 @@ const Navbare = () => {
             height: 50px;
           }
         }
-          /* ==================== Dropdown Scrollable Fix ==================== */
-.dropdown-menu {
-  border: none;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  border-radius: 12px;
-  margin-top: 8px;
-  padding: 0;
-  animation: dropdownFadeIn 0.3s ease;
-  overflow: hidden;
-  max-height: 80vh;
-  overflow-y: auto;
-}
+        /* ==================== Dropdown Scrollable Fix ==================== */
+        .dropdown-menu {
+          border: none;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+          border-radius: 12px;
+          margin-top: 8px;
+          padding: 0;
+          animation: dropdownFadeIn 0.3s ease;
+          overflow: hidden;
+          max-height: 80vh;
+          overflow-y: auto;
+        }
 
-/* Mega Dropdown Specific */
-.mega-dropdown .dropdown-menu {
-  min-width: 950px;
-  max-height: 85vh;
-  overflow-y: auto;
-}
+        /* Mega Dropdown Specific */
+        .mega-dropdown .dropdown-menu {
+          min-width: 950px;
+          max-height: 85vh;
+          overflow-y: auto;
+        }
 
-.mega-dropdown .dropdown-menu .row {
-  padding: 20px !important;
-}
+        .mega-dropdown .dropdown-menu .row {
+          padding: 20px !important;
+        }
 
-/* Custom Scrollbar Styling */
-.dropdown-menu::-webkit-scrollbar {
-  width: 8px;
-}
+        /* Custom Scrollbar Styling */
+        .dropdown-menu::-webkit-scrollbar {
+          width: 8px;
+        }
 
-.dropdown-menu::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
+        .dropdown-menu::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 10px;
+        }
 
-.dropdown-menu::-webkit-scrollbar-thumb {
-  background: #007bff;
-  border-radius: 10px;
-  transition: background 0.3s ease;
-}
+        .dropdown-menu::-webkit-scrollbar-thumb {
+          background: #007bff;
+          border-radius: 10px;
+          transition: background 0.3s ease;
+        }
 
-.dropdown-menu::-webkit-scrollbar-thumb:hover {
-  background: #0056b3;
-}
+        .dropdown-menu::-webkit-scrollbar-thumb:hover {
+          background: #0056b3;
+        }
 
-/* Firefox Scrollbar */
-.dropdown-menu {
-  scrollbar-color: #007bff #f1f1f1;
-  scrollbar-width: thin;
-}
+        /* Firefox Scrollbar */
+        .dropdown-menu {
+          scrollbar-color: #007bff #f1f1f1;
+          scrollbar-width: thin;
+        }
 
-/* ==================== Container Fix ==================== */
-.mega-dropdown-container {
-  background: white;
-  max-height: calc(100vh - 200px);
-  overflow-y: auto;
-}
+        /* ==================== Container Fix ==================== */
+        .mega-dropdown-container {
+          background: white;
+          max-height: calc(100vh - 200px);
+          overflow-y: auto;
+        }
 
-/* ==================== Tablet Responsive (768px - 991px) ==================== */
-@media (max-width: 991px) and (min-width: 768px) {
-  .mega-dropdown .dropdown-menu {
-    min-width: 100%;
-    max-height: 75vh;
-    overflow-y: auto;
-  }
+        /* ==================== Tablet Responsive (768px - 991px) ==================== */
+        @media (max-width: 991px) and (min-width: 768px) {
+          .mega-dropdown .dropdown-menu {
+            min-width: 100%;
+            max-height: 75vh;
+            overflow-y: auto;
+          }
 
-  .mega-dropdown .dropdown-menu .row {
-    padding: 15px !important;
-  }
+          .mega-dropdown .dropdown-menu .row {
+            padding: 15px !important;
+          }
 
-  .dropdown-menu::-webkit-scrollbar {
-    width: 6px;
-  }
-}
+          .dropdown-menu::-webkit-scrollbar {
+            width: 6px;
+          }
+        }
 
-/* ==================== Mobile Responsive (576px - 767px) ==================== */
-@media (max-width: 767px) and (min-width: 576px) {
-  .mega-dropdown .dropdown-menu {
-    min-width: 100%;
-    max-height: 70vh;
-    overflow-y: auto;
-  }
+        /* ==================== Mobile Responsive (576px - 767px) ==================== */
+        @media (max-width: 767px) and (min-width: 576px) {
+          .mega-dropdown .dropdown-menu {
+            min-width: 100%;
+            max-height: 70vh;
+            overflow-y: auto;
+          }
 
-  .mega-dropdown .dropdown-menu .row {
-    padding: 12px !important;
-  }
+          .mega-dropdown .dropdown-menu .row {
+            padding: 12px !important;
+          }
 
-  .dropdown-menu::-webkit-scrollbar {
-    width: 5px;
-  }
+          .dropdown-menu::-webkit-scrollbar {
+            width: 5px;
+          }
 
-  .dropdown-header {
-    font-size: 0.9rem;
-  }
+          .dropdown-header {
+            font-size: 0.9rem;
+          }
 
-  .dropdown-list li a {
-    font-size: 0.85rem;
-    padding: 6px;
-  }
-}
+          .dropdown-list li a {
+            font-size: 0.85rem;
+            padding: 6px;
+          }
+        }
 
-/* ==================== Small Mobile (< 576px) ==================== */
-@media (max-width: 575px) {
-  .dropdown-menu {
-    max-height: 65vh;
-    overflow-y: auto;
-  }
+        /* ==================== Small Mobile (< 576px) ==================== */
+        @media (max-width: 575px) {
+          .dropdown-menu {
+            max-height: 65vh;
+            overflow-y: auto;
+          }
 
-  .mega-dropdown .dropdown-menu {
-    min-width: 100%;
-    max-height: 65vh;
-    padding: 0 !important;
-  }
+          .mega-dropdown .dropdown-menu {
+            min-width: 100%;
+            max-height: 65vh;
+            padding: 0 !important;
+          }
 
-  .mega-dropdown .dropdown-menu .row {
-    padding: 10px !important;
-  }
+          .mega-dropdown .dropdown-menu .row {
+            padding: 10px !important;
+          }
 
-  .dropdown-menu .col-lg-3 {
-    margin-bottom: 15px;
-  }
+          .dropdown-menu .col-lg-3 {
+            margin-bottom: 15px;
+          }
 
-  .dropdown-header {
-    font-size: 0.85rem;
-    margin-bottom: 0.6rem;
-  }
+          .dropdown-header {
+            font-size: 0.85rem;
+            margin-bottom: 0.6rem;
+          }
 
-  .dropdown-list li {
-    margin-bottom: 0.3rem;
-  }
+          .dropdown-list li {
+            margin-bottom: 0.3rem;
+          }
 
-  .dropdown-list li a {
-    font-size: 0.8rem;
-    padding: 5px 4px;
-  }
+          .dropdown-list li a {
+            font-size: 0.8rem;
+            padding: 5px 4px;
+          }
 
-  .dropdown-menu::-webkit-scrollbar {
-    width: 4px;
-  }
-}
+          .dropdown-menu::-webkit-scrollbar {
+            width: 4px;
+          }
+        }
 
-/* ==================== Landscape Orientation Fix ==================== */
-@media (max-width: 991px) and (orientation: landscape) {
-  .dropdown-menu {
-    max-height: 70vh;
-  }
+        /* ==================== Landscape Orientation Fix ==================== */
+        @media (max-width: 991px) and (orientation: landscape) {
+          .dropdown-menu {
+            max-height: 70vh;
+          }
 
-  .mega-dropdown .dropdown-menu {
-    max-height: 70vh;
-  }
-}
+          .mega-dropdown .dropdown-menu {
+            max-height: 70vh;
+          }
+        }
 
-/* ==================== Animation ==================== */
-@keyframes dropdownFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+        /* ==================== Animation ==================== */
+        @keyframes dropdownFadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
       `}</style>
     </>
   );
