@@ -19,7 +19,7 @@ import PopularAssessments from './Components/Pages/PopularAssessments/PopularAss
 import Simulation from './Components/Pages/Simulation/Simulation.jsx'
 import Video from './Components/Pages/Video/Video.jsx'
 import Customization from './Components/Pages/Customization/Customization.jsx'
-import Dedicatedassessment from './Components/Pages/DedicatedAssessment/DedicatedAssessment.jsx'
+import Dedicatedassessment from './Components/Pages/Dedicatedassessment/Dedicatedassessment.jsx'
 import Home from './Components/Pages/Home/home.jsx'
 import AssessmentLibrary from './Components/Pages/AssessmentLibrary/AssessmentLibrary.jsx'
 // import Dedicatedassessment from './Components/PaDedicatedassessment.jsx
