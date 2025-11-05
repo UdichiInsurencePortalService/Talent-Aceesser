@@ -308,6 +308,7 @@ const Navbare = () => {
               <Nav.Link
                 as={Link}
                 to="/AssessmentLibrary"
+                onClick={handleNavClick}
                 style={{ textDecoration: "none" }}
               >
                 <FaFolder className="d-lg-none me-2" />
